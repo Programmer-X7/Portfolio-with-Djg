@@ -12,17 +12,17 @@ function App() {
   return (
     <div>
       <Cursor/>
-      <section id="homepage">
+      <section id="Homepage">
         <Navbar/>
          <Hero/>
       </section>
       <section id="Services"><Parallalx type="services"/></section>
       <section ><Services/></section>
-      <section id="portfolio"><Parallalx type="portfolio"/></section>
+      <section id="Projects"><Parallalx type="portfolio"/></section>
       <Portfolio/>
-      <section id="contact">
-  <Contact/>
-  </section>
+      <section id="Contact">
+       <Contact/>
+      </section>
       
     </div>
   );
