@@ -7,62 +7,78 @@
   display: flex;
   align-items: center;
   gap: 20px;
-  @include mobile{
+
+  @include mobile {
     width: 100%;
-    padding: 10px;
+    padding: 20px;
     flex-direction: column;
-    margin: 0px;
- }
+    margin: 0;
+
+    .textContainer {
+      
+      text-align: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    h1 {
+      font-size: 28px;
+      line-height: 52px;
+    }
+    .formContainer {
+      padding: 10px;
+      width: 100%;
+    }
+  }
+
   .textContainer {
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 40px;
-    
-    @include mobile{
-      gap:20px;
-      text-align: center;
-      align-items: center;
-      margin-top: 70px;
-   }
-
-   
+    gap: 10px;
 
     h1 {
       font-size: 60px;
       line-height: 88px;
-      @include mobile{
-        font-size: 36px;
+
+      @include mobile {
+        font-size: 24px;
+        line-height: 52px;
+      }
+    }
+    h2{
+      @include mobile {
+        font-size: 20px;
+        
       }
     }
 
     span {
       font-weight: 300;
+      @include mobile{
+        font-size: 12px;
+      }
     }
   }
 
   .formContainer {
     flex: 1;
     position: relative;
-    @include mobile{
-      padding: 50px;
-      width: 100%;
-   }
-    
-
 
     .phoneSvg {
       stroke: orange;
-      position:absolute;
+      position: absolute;
       margin: auto;
       z-index: -1;
-      font-size: 10px;
     }
 
     form {
       display: flex;
       flex-direction: column;
       gap: 20px;
+      @include mobile{
+        gap:8px;
+      }
 
       input,
       textarea {
@@ -71,9 +87,10 @@
         border: 2px solid white;
         color: white;
         border-radius: 5px;
-        @include mobile{
+
+        @include mobile {
           padding: 10px;
-       }
+        }
       }
 
       button {
@@ -83,9 +100,10 @@
         cursor: pointer;
         font-weight: 500;
         border-radius: 10px;
-        @include mobile{
+
+        @include mobile {
           padding: 10px;
-       }
+        }
       }
     }
   }
